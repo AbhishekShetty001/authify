@@ -1,7 +1,7 @@
 package com.abhishek.authify.service;
 
 import com.abhishek.authify.Entity.UserEntity;
-import com.abhishek.authify.Reposistory.UserReposistory;
+import com.abhishek.authify.Reposistory.UserRepository;
 import com.abhishek.authify.io.ProfileRequest;
 import com.abhishek.authify.io.ProfileResponse;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +17,7 @@ import java.util.concurrent.ThreadLocalRandom;
 @Service
 @RequiredArgsConstructor
 public class ProfileSeriviceimpl implements ProfileService {
-    private  final UserReposistory userReposistory;
+    private  final UserRepository userReposistory;
     private final PasswordEncoder passwordEncoder;
     private final MailService mailService;
 
