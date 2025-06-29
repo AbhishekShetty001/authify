@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+/deploy/*.jar
+/deploy.zip
+

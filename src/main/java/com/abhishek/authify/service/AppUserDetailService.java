@@ -1,7 +1,7 @@
 package com.abhishek.authify.service;
 
 import com.abhishek.authify.Entity.UserEntity;
-import com.abhishek.authify.Reposistory.UserReposistory;
+import com.abhishek.authify.Reposistory.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 // This filter internally calls your AppUserDetailService.loadUserByUsername(email) to:
 //Find the user in the DB (via UserRepository)
 public class AppUserDetailService implements UserDetailsService {
-    private final UserReposistory userReposistory;
+    private final UserRepository userReposistory;
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         System.out.println("[UserDetailsService] Loading user by email: " + email);
